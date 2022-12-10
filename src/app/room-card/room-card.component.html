@@ -1,10 +1,14 @@
 <div class="container">
     <div class="title">
-        Room name
+        {{ name }}
     </div>
     <div class="logo">
         <!-- room img -->
-        <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="logo">
+        <img [src]="img" alt="logo">
+    </div>
+
+    <div class="marque">
+        {{ marque}}
     </div>
     
     <label class="switch">
@@ -12,5 +16,5 @@
         <span class="slider round"></span>
     </label>
 
-    <button mat-button (click)="openDialog()">Open dialog</button>
+    <!-- <button mat-button (click)="openDialog()">Open dialog</button> -->
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RoomDetailsComponent } from '../room-details/room-details.component';
 
@@ -8,6 +8,12 @@ import { RoomDetailsComponent } from '../room-details/room-details.component';
   styleUrls: ['./room-card.component.scss']
 })
 export class RoomCardComponent implements OnInit {
+
+
+  @Input() name: string = '';
+  @Input() marque: string = '';
+  @Input() img: string = '';
+
 
   constructor(
     public dialog: MatDialog

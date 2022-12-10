@@ -1,14 +1,25 @@
 <mat-tab-group>
   <mat-tab label="Living Room"> 
     <div class="cardList">
-      <app-room-card></app-room-card>
-      <app-room-card></app-room-card>
-      <app-room-card></app-room-card>
-      <app-room-card></app-room-card>
+      <app-room-card [name]="'spotlight'" [marque]="'samsung'" [img]="'./assets/tv.png'"></app-room-card>
+      <app-room-card [name]="'AirConditioner'" [marque]="'samsung'" [img]="'./assets/climatiseur.png'"></app-room-card>
+      <app-room-card [name]="'Telévision'" [marque]="'samsung'"></app-room-card>
+      <app-room-card [name]="'speaker'" [marque]="'samsung'"></app-room-card>
     </div>
   </mat-tab>
-  <mat-tab label="BathRoom"> Content 2 </mat-tab>
-  <mat-tab label="Kichen"> Content 3 </mat-tab>
+  <mat-tab label="BathRoom"> 
+    <div class="cardList">
+      <app-room-card [name]="'spotlight'" [marque]="'samsung'"></app-room-card>
+      <app-room-card [name]="'Chauffage'" [marque]="'samsung'"></app-room-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="Kichen"> 
+    <div class="cardList">
+      <app-room-card [name]="'spotlight'" [marque]="'samsung'"></app-room-card>
+      <app-room-card [name]="'Microndes'" [marque]="'samsung'"></app-room-card>
+      <app-room-card [name]="'Frigidaire'" [marque]="'samsung'"></app-room-card>
+    </div>
+   </mat-tab>
 </mat-tab-group>
 
 

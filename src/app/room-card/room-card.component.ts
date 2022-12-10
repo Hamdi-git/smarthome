@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { RoomDetailsComponent } from '../room-details/room-details.component';
 
 @Component({
   selector: 'app-room-card',
@@ -7,13 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
 
   openDialog(){
-    console.log('open dialog');
+    
+    this.dialog.open(RoomDetailsComponent, {
+      data: {
+        animal: 'panda',
+      },
+    });
   }
 
 }

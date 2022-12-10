@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { RoomCardComponent } from './room-card/room-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import { RoomDetailsComponent } from './room-details/room-details.component';
 @NgModule({
   declarations: [
     AppComponent,
-    RoomCardComponent
+    RoomCardComponent,
+    RoomDetailsComponent
   ],
   imports: [
     BrowserModule,

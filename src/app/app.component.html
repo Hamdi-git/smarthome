@@ -1,23 +1,35 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="welcome">Welcome to your home {{ userName }}
+  </span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    {{ clockTime }}
+  </button>
+</mat-toolbar>
+
 <mat-tab-group>
   <mat-tab label="Living Room"> 
     <div class="cardList">
-      <app-room-card [name]="'spotlight'" [marque]="'samsung'" [img]="'./assets/tv.png'"></app-room-card>
+      <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'" ></app-room-card>
       <app-room-card [name]="'AirConditioner'" [marque]="'samsung'" [img]="'./assets/climatiseur.png'"></app-room-card>
-      <app-room-card [name]="'Telévision'" [marque]="'samsung'"></app-room-card>
-      <app-room-card [name]="'speaker'" [marque]="'samsung'"></app-room-card>
+      <app-room-card [name]="'Television'" [marque]="'samsung'" [img]="'./assets/tv.png'"></app-room-card>
+      <app-room-card [name]="'Speaker'" [marque]="'samsung'" [img]="'./assets/audio.png'"></app-room-card>
     </div>
   </mat-tab>
-  <mat-tab label="BathRoom"> 
+  <mat-tab label="Bathroom"> 
     <div class="cardList">
-      <app-room-card [name]="'spotlight'" [marque]="'samsung'"></app-room-card>
-      <app-room-card [name]="'Chauffage'" [marque]="'samsung'"></app-room-card>
+      <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'"></app-room-card>
+      <app-room-card [name]="'Heater'" [marque]="'samsung'" [img]="'./assets/heater.png'"></app-room-card>
     </div>
   </mat-tab>
-  <mat-tab label="Kichen"> 
+  <mat-tab label="Kitchen"> 
     <div class="cardList">
-      <app-room-card [name]="'spotlight'" [marque]="'samsung'"></app-room-card>
-      <app-room-card [name]="'Microndes'" [marque]="'samsung'"></app-room-card>
-      <app-room-card [name]="'Frigidaire'" [marque]="'samsung'"></app-room-card>
+      <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'"></app-room-card>
+      <app-room-card [name]="'Microwave'" [marque]="'samsung'" [img]="'./assets/microwave.png'" ></app-room-card>
+      <app-room-card [name]="'Fridge'" [marque]="'samsung'" [img]="'./assets/fridge.png'"></app-room-card>
     </div>
    </mat-tab>
 </mat-tab-group>

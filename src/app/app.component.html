@@ -11,20 +11,34 @@
 </mat-toolbar>
 
 <mat-tab-group>
+
+    <!-- living room -->
   <mat-tab label="Living Room"> 
     <div class="cardList">
       <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'" ></app-room-card>
       <app-room-card [name]="'AirConditioner'" [marque]="'samsung'" [img]="'./assets/climatiseur.png'"></app-room-card>
       <app-room-card [name]="'Television'" [marque]="'samsung'" [img]="'./assets/tv.png'"></app-room-card>
       <app-room-card [name]="'Speaker'" [marque]="'samsung'" [img]="'./assets/audio.png'"></app-room-card>
+      <app-room-card [name]="'Door Lock'" [marque]="'Locks'" [img]="'./assets/lock.webp'"></app-room-card>
+      <app-room-card [name]="'window'" [marque]="'windows'" [img]="'./assets/window.png'"></app-room-card>
+      <app-room-card [name]="'fans'" [marque]="'LG'" [img]="'./assets/fans.webp'"></app-room-card>
+      <!--  camera -->
+        <app-room-card [name]="'camera'" [marque]="'Toshiba'" [img]="'./assets/camera.png'"></app-room-card>
     </div>
   </mat-tab>
+
+  <!-- bathroom -->
   <mat-tab label="Bathroom"> 
     <div class="cardList">
       <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'"></app-room-card>
       <app-room-card [name]="'Heater'" [marque]="'samsung'" [img]="'./assets/heater.png'"></app-room-card>
+        <app-room-card [name]="'Shower'" [marque]="'samsung'" [img]="'./assets/shower.png'"></app-room-card>
+        <app-room-card [name]="'window'" [marque]="'windows'" [img]="'./assets/window.png'"></app-room-card>
+        <app-room-card [name]="'Door Lock'" [marque]="'Locks'" [img]="'./assets/lock.webp'"></app-room-card>
     </div>
   </mat-tab>
+
+  <!-- kitchen -->
   <mat-tab label="Kitchen"> 
     <div class="cardList">
       <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'"></app-room-card>
@@ -32,6 +46,27 @@
       <app-room-card [name]="'Fridge'" [marque]="'samsung'" [img]="'./assets/fridge.png'"></app-room-card>
     </div>
    </mat-tab>
+
+   <!-- kids room -->
+    <mat-tab label="Kids Room"> 
+        <div class="cardList">
+        <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'"></app-room-card>
+        <app-room-card [name]="'AirConditioner'" [marque]="'samsung'" [img]="'./assets/climatiseur.png'"></app-room-card>
+        <app-room-card [name]="'Television'" [marque]="'samsung'" [img]="'./assets/tv.png'"></app-room-card>
+        <app-room-card [name]="'Speaker'" [marque]="'samsung'" [img]="'./assets/audio.png'"></app-room-card>
+        </div>
+    </mat-tab>
+
+    <!-- bedroom -->
+    <mat-tab label="Bedroom"> 
+        <div class="cardList">
+        <app-room-card [name]="'Spotlight'" [marque]="'samsung'" [img]="'./assets/spot.png'"></app-room-card>
+        <app-room-card [name]="'AirConditioner'" [marque]="'samsung'" [img]="'./assets/climatiseur.png'"></app-room-card>
+        <app-room-card [name]="'Television'" [marque]="'samsung'" [img]="'./assets/tv.png'"></app-room-card>
+        <app-room-card [name]="'Speaker'" [marque]="'samsung'" [img]="'./assets/audio.png'"></app-room-card>
+        </div>
+    </mat-tab>
+   
 </mat-tab-group>
 
 
